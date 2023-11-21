@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur de Salaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calcul Du Salaire Brut En Net</h1>
+  <form id="salaireForm">
+    <div>
+      <h2>INDIQUEZ VOTRE SALAIRE BRUT</h2>
+      <label for="salaireBrutHoraire">Horaire brut</label>
+      <input type="number" id="salaireBrutHoraire" placeholder="0">
+    </div>
+    <div>
+      <label for="salaireBrutMensuelNonCadre">Mensuel brut</label>
+      <input type="number" id="salaireBrutMensuelNonCadre" placeholder="0">
+    </div>
+    <div>
+      <label for="salaireBrutAnnuel">Annuel brut</label>
+      <input type="number" id="salaireBrutAnnuel" placeholder="0">
+    </div>
+
+    <div>
+      <h2>RÉSULTAT DE VOTRE SALAIRE NET</h2>
+      <div>
+        <label for="salaireNetHoraire">Horaire net</label>
+        <output id="salaireNetHoraire">0</output>
+      </div>
+      <div>
+        <label for="salaireNetMensuel">Mensuel net</label>
+        <output id="salaireNetMensuel">0</output>
+      </div>
+      <div>
+        <label for="salaireNetAnnuel">Annuel net</label>
+        <output id="salaireNetAnnuel">0</output>
+      </div>
+    </div>
+
+    <div>
+      <label for="statut">SÉLECTIONNEZ VOTRE STATUT :</label>
+      <select id="statut">
+        <option value="non-cadre">Salarié non-cadre</option>
+        <option value="cadre">Salarié cadre</option>
+        <option value="fonction-publique">Fonction publique</option>
+        <option value="profession-liberale">Profession libérale</option>
+        <option value="portage-salarial">Portage salarial</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="tempsTravail">SÉLECTIONNEZ VOTRE TEMPS DE TRAVAIL :</label>
+      <div class="flexi">
+        <input type="range" id="tempsTravail" min="0" max="100" step="10" value="100">
+        <output id="tempsTravailValue">100%</output>
+      </div>
+
+    </div>
+
+    <div>
+      <label>SÉLECTIONNEZ LE NOMBRE DE MOIS DE PRIME CONVENTIONNELLE:</label>
+        <div class="flexi">
+            <div>
+                <input type="radio" id="mois12" name="moisPrime" value="12">
+                <label for="mois12">12 mois</label>
+            </div>
+            <div>
+                <input type="radio" id="mois13" name="moisPrime" value="13">
+                <label for="mois13">13 mois</label>
+            </div>
+            <div>
+                <input type="radio" id="mois14" name="moisPrime" value="14">
+                <label for="mois14">14 mois</label>
+            </div>
+            <div>
+                <input type="radio" id="mois15" name="moisPrime" value="15">
+                <label for="mois15">15 mois</label>
+            </div>
+            <div>
+                <input type="radio" id="mois16" name="moisPrime" value="16">
+                <label for="mois16">16 mois</label>
+            </div>
+        </div>
+    </div>
+      
+
+    <div>
+      <label for="prelevementSource">SÉLECTIONNEZ LE TAUX DE PRÉLÈVEMENT À LA SOURCE :</label>
+      <div class="flexi">
+        <input type="range" id="prelevementSource" min="0" max="43.0" step="0.1" value="0">
+        <output id="prelevementSourceValue">0.0%</output>
+      </div>
+    </div>
+
+    <h2>ESTIMATION DE VOTRE SALAIRE NET APRÈS LE PRÉLÈVEMENT À LA SOURCE</h2>
+    <div>
+      <label for="mensuelNetApresImpots">Mensuel net après impôts</label>
+      <output id="mensuelNetApresImpots">0</output>
+    </div>
+    <div>
+      <label for="annuelNetApresImpots">Annuel net après impôts</label>
+      <output id="annuelNetApresImpots">0</output>
+    </div>
+    <button type="button" id="effacerChamps">EFFACER LES CHAMPS</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
