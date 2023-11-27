@@ -1,73 +1,291 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    padding-right: 45px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  font-size: 80%;
+}
+
+#tempsTravail {
+  width: 129%;
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-right: 45px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #e74c3c;
+}
+#salaireNetHoraire,
+#salaireNetMensuel,
+#salaireNetAnnuel {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-top: 5px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+  background-color: white;
+}
+
+#salaireBrutHoraire,
+#salaireBrutMensuelNonCadre,
+#salaireBrutAnnuel {
+  color: black;
+  box-shadow: 1px 1px 1px #ccc;
+  background-color: white;
+}
+
+#text-staturadio {
+  margin-top: 10px;
+  color: #e74c3c;
+}
+
+.staturadio {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.un {
+  display: flex;
+}
+
+.deux {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: baseline;
+  width: 50%;
+  margin-left: 15px;
+}
+
+.salairebrute {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 25%;
+}
+
+.hallostatu {
+  position: absolute;
+  transform: translate(2%, 200%);
+  width: 24.5%;
+}
+
+#Mensuel-brut {
+  display: flex;
+}
+
+#statut-marg {
+  margin-bottom: 20px;
+}
+
+#statutRadios {
+  margin: 0px;
+  margin-left: 11px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 1px;
+  color: #e74c3c;
+}
+
+.ApresImpots {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+}
+
+#mensuelNetApresImpots,
+#annuelNetApresImpots {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+  color: black;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.salairenet {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.TRAVAIL {
+  margin-top: 10px;
+  font-size: 87%;
 }
 
 .flexi {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  box-shadow: 1px 1px 1px #ccc;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 13px;
 }
-  
-  div {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="number"],
-  select,
-  input[type="range"],
-  button {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  output {
-    display: block;
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
-  button {
-    background-color: #af4c4c;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 16px;
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #ce2323;
-  }
+
+.text-mois {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+#prelevement {
+  font-size: 87%;
+}
+
+#tempsTravailValue {
+  display: contents;
+}
+
+#prelevementSourceValue {
+  display: contents;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+.marg {
+  margin-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 87%;
+}
+
+input[type="number"],
+select,
+input[type="range"],
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+output {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+  background-color: white;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #e74c3c;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-shadow: 2px 2px 2px #ccc;
+  height: 30px;
+  width: 40px;
+  background: #ffffff;
+  border-radius: 10%;
+  margin-top: -7px;
+}
+
+
+.flexi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flexi .marg input[type="radio"] {
+  display: none;
+}
+
+.flexi .marg label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.flexi .marg input[type="radio"] + label::before {
+  content: '';
+  font-size: 14px;
+  color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.flexi .marg input[type="radio"]:checked + label::before {
+  content: '\2713';
+  color: white;
+  background-color: #e74c3c;
+}
+
+/* Lorsque le bouton radio est coché */
+.flexi .marg input[type="radio"]:checked + label {
+  color: #e74c3c;
+}
