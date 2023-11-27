@@ -245,7 +245,6 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -7px;
 }
 
-
 .flexi {
   display: flex;
   flex-wrap: wrap;
@@ -267,7 +266,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .flexi .marg input[type="radio"] + label::before {
-  content: '';
+  content: "";
   font-size: 14px;
   color: transparent;
   border: 2px solid #e74c3c;
@@ -280,7 +279,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .flexi .marg input[type="radio"]:checked + label::before {
-  content: '\2713';
+  content: "\2713";
   color: white;
   background-color: #e74c3c;
 }
